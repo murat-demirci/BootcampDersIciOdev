@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <ul id="productsList" class="item-list"></ul>
+      </div>
+      <hr>
+      <div>
+        <form class="post-form-style" onsubmit="postData(event)">
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Product Name" name="name" id="name"/>
+          </div>
+          <div>
+            <label for="unitprice">Unit Price:</label>
+            <input type="text" placeholder="Unit Price" name="unitprice" id="unitPrice"/>
+          </div>
+          <div>
+            <label for="instock">Units in Stock:</label>
+            <input type="text" placeholder="Unit in Stock" name="instock" id="inStock"/>
+          </div>
+          <div>
+            <label for="categoryid">Category Id:</label>
+            <input type="text" placeholder="Category Id" name="categoryid" id="categoryId"/>
+          </div>
+          <button class="add-button" type="submit">Add</button>
+        </form>
+      </div>
+      <hr>
+      <div>
+        <form class="delete-form-style" onsubmit="deleteData(event)">
+          <div>
+            <label for="id">Id:</label>
+            <input type="number" placeholder="Product Id" name="id" id="id"/>
+          </div>
+          <button class="delete-button" type="submit">Delete</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

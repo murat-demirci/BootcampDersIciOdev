@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2rem;
+}
+
+.container hr {
+    top: 2rem;
+    bottom: 2rem;
+    width: 1px;
+    height: 90vh;
+    border: none;
+    background-color: darkblue;
+    z-index: 1;
+} 
+
+.delete-form-style {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 33.33vw;
+    padding: 0.5rem 0;
+    justify-content: center;
+}
+
+.post-form-style {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 33.33vw;
+    padding: 0.5rem 0;
+    justify-content: center;
+}
+
+.post-form-style div label,.delete-form-style div label {
+    width: 100%;
+    text-align: left;
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0.25rem 0;
+}
+
+.post-form-style div input, .delete-form-style div input {
+    width: 100%;
+    border: 1px solid grey;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0.25rem 0;
+}
+
+.delete-button {
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: red;
+    color: white;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+        sans-serif;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(255, 0, 0, 0.8);
+    }
+}
+
+.add-button {
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: rgba(0, 180, 0, 1);
+    color: white;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+        sans-serif;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(0, 180, 0, 0.8);
+    }
+}
+
+.item-list {
+    line-height: 1.5;
+    overflow-y: auto;
+    max-height: 100vh;
+    min-width: 33.3vw;
+    padding: 0.5rem;
+    list-style: decimal;
+}
+
+.item-list li {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: #f0f0f0;
+    border-radius: 0.5rem;
+    &:hover {
+        background-color: #e0e0e0;
+    }
+}
+   
