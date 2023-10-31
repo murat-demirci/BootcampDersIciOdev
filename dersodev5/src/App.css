@@ -1,0 +1,19 @@
+.base-container{
+  display: flex !important;
+  justify-content: center !important;
+  margin-top: 2rem !important;
+}
+button{
+  width: 100%;
+  border: 1px solid gray;
+  padding: 0.5rem;
+  background-color: transparent;
+
+  &:hover{
+    background-color: gray;
+    cursor: pointer;
+    color: white;
+  }
+
+  
+}
